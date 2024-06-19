@@ -43,4 +43,43 @@ header{
 .container{
     min-width: min(100vw, 800px);
     max-width: 1000px;
+    padding: 0 34px;
+}
+
+
+
+.status-badge{
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-weight: 500;
+    height: 20px;
+}
+
+.status-badge.inprogress{
+    background-color: hsl(37, 100%, 25%);
+    /*color: hsl(37, 100%, 13%);*/
+}
+
+.status-badge.done{
+    background-color: hsl(160, 100%, 13%);
+    /*color: hsl(160, 100%, 13%);*/
+}
+.status-badge.todo{
+    background-color: hsl(340, 98%, 23%);
+    /*color: hsl(340, 98%, 23%);*/
+}
+
+.link-external svg{
+    margin-left: 4px;
+}
+
+table{
+    background-color: #181a1b;
+    border-radius: 5px;
+    padding: 10px;
 }

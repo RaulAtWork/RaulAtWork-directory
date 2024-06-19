@@ -1,25 +1,52 @@
 import React, { useMemo } from "react";
 import ProjectTable from "../components/ProjectTable";
+import StatusBadge, { STATUS } from "../components/StatusBadge";
+import ExternalLink from "../components/ExternalLink";
 
-function Home(){
+function Home() {
+  const projectData = useMemo(
+    () => [
+      {
+        name: "Refactoring UI",
+        source: (
+          <ExternalLink
+            link="https://github.com/RaulAtWork/Refactoring-UI-Best-Practice"
+            display="Source Code"
+          />
+        ),
+        link: (
+          <ExternalLink
+            link="https://raulatwork-refactoringui.netlify.app/"
+            display="Netlify"
+          />
+        ),
+        status: <StatusBadge status={STATUS.INPROGRESS} />,
+        description: "Refactoring ui shit",
+        comment: "abandoned project",
+        techs: "React, CRA",
+      },
+      {
+        name: "Component Gallery",
+        status: <StatusBadge status={STATUS.TO_DO} />,
+      },
+      {
+        name: "Dark Theme",
+        status: <StatusBadge status={STATUS.TO_DO} />,
+        comment: "npm project"
+      },
+    ],
+    []
+  );
 
-    const projectData = useMemo(() => [{
-        name: "Test",
-        status: "in-progress"
-    },
-    {
-        name: "Test2",
-        status: "in-progress"
-    },
-    {
-        name: "Test3",
-        status: "in-progress"
-    }], [])
+  return (
+    <>
+      <h1>Welcome home captain.</h1>
+      <StatusBadge status={STATUS.TO_DO} />
 
-    return (<>
-        <h1>Welcome home captain.</h1>
-        <ProjectTable data={projectData}/>
-    </>)
+      <StatusBadge status={STATUS.DONE} />
+      <ProjectTable data={projectData} />
+    </>
+  );
 }
 
-export default Home
+export default Home;

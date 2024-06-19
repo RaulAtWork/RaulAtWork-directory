@@ -6,12 +6,32 @@ function ProjectsTable({ data }) {
   const columns = useMemo(
     () => [
       {
-        Header: "Project Name",
+        Header: "Project",
         accessor: "name",
+      },
+      {
+        Header: "Soruce",
+        accessor: "source",
+      },
+      {
+        Header: "Link",
+        accessor: "link",
       },
       {
         Header: "Status",
         accessor: "status",
+      },
+      {
+        Header: "Description",
+        accessor: "description",
+      },
+      {
+        Header: "Comment",
+        accessor: "comment",
+      },
+      {
+        Header: "Techs",
+        accessor: "techs",
       },
     ],
     []
