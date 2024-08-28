@@ -11,7 +11,7 @@ const useProjectData = () => {
         source: (
           <ExternalLink
             link="https://github.com/RaulAtWork/Refactoring-UI-Best-Practice"
-            display="Source Code"
+            display="Github"
           />
         ),
         link: (
@@ -30,7 +30,7 @@ const useProjectData = () => {
         source: (
           <ExternalLink
             link="https://github.com/RaulAtWork/UI-Oasis"
-            display="Source Code"
+            display="Github"
           />
         ),
         status: <StatusBadge status={STATUS.INPROGRESS} />,
@@ -42,6 +42,24 @@ const useProjectData = () => {
         status: <StatusBadge status={STATUS.TO_DO} />,
         comment: "npm project",
       },
+      {
+        name: "Tidal Task",
+        source: (
+          <ExternalLink
+            link="https://github.com/RaulAtWork/tidal-task"
+            display="Github"
+          />
+        ),
+        status: <StatusBadge status={STATUS.INPROGRESS} />,
+        description: "Task Manager",
+        techs: "React, Vite",
+        link: (
+          <ExternalLink
+            link="https://tidal-task.netlify.app/"
+            display="Netlify"
+          />
+        )
+      }
     ],
     []
   );

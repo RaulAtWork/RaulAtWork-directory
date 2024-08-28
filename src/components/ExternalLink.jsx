@@ -4,7 +4,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons/faAr
 
 function ExternalLink({ link, display }) {
   return (
-    <a className="link-external" href={link}>
+    <a className="link-external" href={link} target="_blank">
       {display}
       <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
     </a>

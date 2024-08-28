@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <span className="header-title">
-        RaulAtWork Directory <small className="header-version">v 0.1</small>
+        RaulAtWork Directory <small className="header-version">v 1.0</small>
       </span>
     </header>
   );
