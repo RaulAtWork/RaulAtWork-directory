@@ -38,9 +38,22 @@ const useProjectData = () => {
         techs: "React, Vite",
       },
       {
-        name: "Dark Theme",
-        status: <StatusBadge status={STATUS.TO_DO} />,
-        comment: "npm project",
+        name: "Chroma Shift",
+        status: <StatusBadge status={STATUS.DONE} />,
+        description: "npm project",
+        source: (
+          <ExternalLink
+            link="https://github.com/RaulAtWork/chroma-shift-component"
+            display="Github"
+          />
+        ),
+        link: (
+          <ExternalLink
+            link="https://www.npmjs.com/package/chroma-shift"
+            display="npm"
+          />
+        ),
+        techs: "React, Vite and npm"
       },
       {
         name: "Tidal Task",
@@ -58,8 +71,8 @@ const useProjectData = () => {
             link="https://tidal-task.netlify.app/"
             display="Netlify"
           />
-        )
-      }
+        ),
+      },
     ],
     []
   );
