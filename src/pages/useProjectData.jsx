@@ -33,6 +33,12 @@ const useProjectData = () => {
             display="Github"
           />
         ),
+        link: (
+          <ExternalLink
+          link="https://oasis-ui.netlify.app/"
+          display="Netlify"
+          />
+        ),
         status: <StatusBadge status={STATUS.INPROGRESS} />,
         description: "Component Gallery",
         techs: "React, Vite",
